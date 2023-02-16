@@ -12,7 +12,7 @@ submitBtn.addEventListener("click", () => {
 
 
 window.onload = () => {
-  if ("speechSynhesis" in window) {
+  if ("speechSynthesis" in window) {
     audioMessage = new SpeechSynthesisUtterance();
   } else {
     alert("Speech Synthese is not supported");
